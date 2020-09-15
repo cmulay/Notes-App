@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="format-detection"
+      content="telephone=no, address=no, email=no"
+    />
+    <title>Minimal Notes</title>
+
+    <link
+      rel="shortcut icon"
+      href="/notes/assets/icons/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/notes/styles/style.css" />
+    <link rel="stylesheet" href="/notes/styles/m-style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Minimal Notes</h1>
+      <h2>Elegant Note talking experience</h2>
+    </header>
+    <div class="go-home">
+      <a href="/notes/index.html"></a>
+    </div>
+    <div class="edit-container">
+      <input
+        type="text"
+        placeholder="Title"
+        id="note-title"
+        class="title-input"
+      />
+      <textarea
+        placeholder="Start Typing..."
+        id="note-body"
+        class="body-input"
+      ></textarea>
+    </div>
+    <button id="remove-note">Delete Note</button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment-with-locales.min.js"></script>
+    <script src="/notes/js/notes-function.js"></script>
+    <script src="/notes/js/notes-edit.js"></script>
+  </body>
+</html>
