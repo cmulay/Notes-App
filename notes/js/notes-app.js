@@ -17,7 +17,7 @@ document.querySelector("#create-note").addEventListener("click", (e) => {
     id: id,
     title: "",
     body: "",
-    createAt: timestamp,
+    createdAt: timestamp,
     updatedAt: timestamp,
   });
   saveNotes(notes);
