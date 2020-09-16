@@ -1,6 +1,6 @@
 # Nota - The Note Taking App [Beta-1]
 
-Nota is a simple and clean note taking app which gives you materially designed minimal experience which helps you to stay focused.
+Nota is a simple and clean note taking app which gives you materially designed minimal note taking experience which helps you to stay focused.
 
 ---
 ## Features
