@@ -1,74 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Nota - The Note App</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta
       name="format-detection"
       content="telephone=no, address=no, email=no"
     />
-    <title>Minimal Notes</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+    />
 
     <link
-      rel="shortcut icon"
+      rel="icon"
       href="/notes/assets/icons/favicon.ico"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="/notes/styles/style.css" />
-    <link rel="stylesheet" href="/notes/styles/m-style.css" />
+    <link rel="stylesheet" href="/notes/styles/styles.css" />
+    <link rel="stylesheet" href="/notes/styles/m-styles.css" />
   </head>
   <body>
     <header class="header">
-      <h1>Minimal Notes</h1>
-      <h2>Elegant Note talking experience</h2>
+      <h1><img src="/notes/assets/images/notes_logo.png" alt="Nota Logo" /></h1>
+      <h2>Simple and Clean. <br />Helps you to stayed focused.</h2>
     </header>
     <div class="actions">
       <input
         type="text"
-        class="input"
         id="search-text"
-        placeholder="Filter Notes"
+        class="input"
+        placeholder="Filter notes"
       />
-      <select id="filter-by" class="dropdown">
+      <select class="dropdown" id="filter-by">
         <option value="alphabetical">Sort by Alphabetically</option>
-        <option value="byCreated">Sort by Recently Added</option>
+        <option value="byCreated">Sort by Recently Created</option>
         <option value="byEdited">Sort by Last Edited</option>
       </select>
-    </div>
-    <div class="container">
-      <div class="calender">
-        <div class="cld-title">
-          <span class="month-num"></span>
-          <span class="month-string"></span>
-        </div>
-        <div class="cld-group">
-          <ul id="day">
-            <li><a href="#">S</a></li>
-            <li><a href="#">M</a></li>
-            <li><a href="#">T</a></li>
-            <li><a href="#">W</a></li>
-            <li><a href="#">T</a></li>
-            <li><a href="#">F</a></li>
-            <li><a href="#">S</a></li>
-          </ul>
-          <ul id="days"></ul>
-        </div>
-        <button id="create-note" class="button">New Note</button>
+      <br /><br />
+      <center>
+        <button id="create-note" class="button">Create Note</button>
+      </center>
+      <br /><br />
+      <div class="container">
+        <div id="notes"></div>
       </div>
-      <div id="notes"></div>
     </div>
-    <script src="/notes/js/calendar.js"></script>
-    <script>
-      window.addEventListener("load", () => {
-        calender.init();
-      });
-    </script>
+
     <script src="/notes/js/uuid4.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment-with-locales.min.js"></script>
-    <script src="/notes/js/notes-function.js"></script>
+    <script src="/notes/js/notes-functions.js"></script>
     <script src="/notes/js/notes-app.js"></script>
   </body>
 </html>
