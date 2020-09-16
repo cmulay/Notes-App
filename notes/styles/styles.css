@@ -1,0 +1,186 @@
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 6em 2em;
+  min-width: 950px;
+  margin: 0 auto;
+  height: calc(100% - 12em);
+}
+
+header {
+  display: block;
+  width: 100%;
+}
+
+h1,
+h2 {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+}
+
+.actions {
+  text-align: center;
+  margin: 2em 0 5em;
+}
+
+.actions input,
+.actions select {
+  font-size: 15px;
+  font-weight: 100;
+  color: #707070;
+  border: 1px solid #707070;
+}
+
+.actions input {
+  width: 150px;
+  padding: 0 0.5em;
+  line-height: 30px;
+  height: 30px;
+  margin-right: 0.2em;
+  font-family: inherit;
+}
+
+.actions select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0 0.5em;
+  width: 200px;
+  line-height: 32px;
+  height: 32px;
+  font-family: inherit;
+  background: url(/notes/assets/icons/dropdown.png) no-repeat 100% 50%;
+}
+
+.container {
+  width: 100%;
+  position: relative;
+  display: inline-block;
+}
+
+.calender {
+  width: 240px;
+  position: relative;
+  float: left;
+}
+
+.calender .cld-title {
+  margin-bottom: 1em;
+}
+
+.calender .cld-title > span:nth-of-type(1) {
+  font-size: 50px;
+  font-weight: 700;
+}
+
+.calender .cld-title > span:nth-of-type(2) {
+  font-size: 16px;
+}
+
+.calender .cld-group ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.calender .cld-group ul li {
+  position: relative;
+  display: inline-block;
+  width: calc(240px / 7 - 4px);
+  margin: 15px 0;
+}
+
+.calender .cld-group ul:nth-of-type(2) li {
+  width: calc(240px / 7);
+}
+
+.calender .cld-group ul li > a {
+  display: block;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 500;
+  color: #121212;
+}
+
+.calender .cld-group ul li.active > a {
+  color: #ffffff;
+}
+
+.calender .cld-group ul li.active::before {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: #121212;
+  background-size: cover;
+  position: absolute;
+  border-radius: 50%;
+  top: -2px;
+  left: calc(50% -12.5px);
+}
+
+#create-note {
+  width: 240px;
+  height: 35px;
+  line-height: 35px;
+  background-color: #121212;
+  color: #ffffff;
+  border: none;
+  font-family: "Avenir";
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 1em;
+}
+
+#notes:::-webkit-scrollbar {
+  display: none;
+}
+
+#notes a {
+  display: inline-block;
+  color: #121212;
+  text-decoration: none;
+  margin: 5px 10px;
+  padding: 100px 35px 50px 35px;
+  width: calc(50% - 100px);
+  box-shadow: 5px 15px 20px #d1d1d1;
+}
+
+#notes a > p {
+  margin: 0;
+  display: block;
+  overflow: hidden;
+  text-overflow: hidden;
+  width: 200px;
+  word-spacing: normal;
+  text-align: left;
+  word-wrap: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+#notes a > p:nth-of-type(1) {
+  font-size: 27px;
+  font-weight: 900;
+  margin-bottom: 0.4em;
+  line-height: 1.2em;
+  height: 2.4em;
+}
+
+#notes a > span {
+  display: inline-block;
+  font-weight: 900;
+}
