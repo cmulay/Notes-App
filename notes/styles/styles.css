@@ -1,15 +1,15 @@
 html {
   margin: 0;
   padding: 0;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: black;
+  font-family: "Avenir";
+  color: #121212;
   height: 100%;
 }
 
 body {
   margin: 0;
   padding: 6em 2em;
-  min-width: 950px;
+  max-width: 950px;
   margin: 0 auto;
   height: calc(100% - 12em);
 }
@@ -23,13 +23,13 @@ h1,
 h2 {
   text-align: center;
   padding: 0;
-  margin: 0;
+  margin: 0s;
   font-size: 30px;
 }
 
 .actions {
   text-align: center;
-  margin: 2em 0 5em;
+  margin: 2em 0 10em;
 }
 
 .actions input,
@@ -43,10 +43,9 @@ h2 {
 .actions input {
   width: 150px;
   padding: 0 0.5em;
-  line-height: 30px;
-  height: 30px;
+  line-height: 33px;
+  height: 33px;
   margin-right: 0.2em;
-  font-family: inherit;
 }
 
 .actions select {
@@ -55,8 +54,8 @@ h2 {
   appearance: none;
   padding: 0 0.5em;
   width: 200px;
-  line-height: 32px;
-  height: 32px;
+  line-height: 35px;
+  height: 35px;
   font-family: inherit;
   background: url(/notes/assets/icons/dropdown.png) no-repeat 100% 50%;
 }
@@ -65,70 +64,6 @@ h2 {
   width: 100%;
   position: relative;
   display: inline-block;
-}
-
-.calender {
-  width: 240px;
-  position: relative;
-  float: left;
-}
-
-.calender .cld-title {
-  margin-bottom: 1em;
-}
-
-.calender .cld-title > span:nth-of-type(1) {
-  font-size: 50px;
-  font-weight: 700;
-}
-
-.calender .cld-title > span:nth-of-type(2) {
-  font-size: 16px;
-}
-
-.calender .cld-group ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.calender .cld-group ul li {
-  position: relative;
-  display: inline-block;
-  width: calc(240px / 7 - 4px);
-  margin: 15px 0;
-}
-
-.calender .cld-group ul:nth-of-type(2) li {
-  width: calc(240px / 7);
-}
-
-.calender .cld-group ul li > a {
-  display: block;
-  position: relative;
-  width: 100%;
-  text-align: center;
-  text-decoration: none;
-  font-size: 15px;
-  font-weight: 500;
-  color: #121212;
-}
-
-.calender .cld-group ul li.active > a {
-  color: #ffffff;
-}
-
-.calender .cld-group ul li.active::before {
-  content: "";
-  display: block;
-  width: 25px;
-  height: 25px;
-  background-color: #121212;
-  background-size: cover;
-  position: absolute;
-  border-radius: 50%;
-  top: -2px;
-  left: calc(50% -12.5px);
 }
 
 #create-note {
@@ -144,7 +79,13 @@ h2 {
   margin-top: 1em;
 }
 
-#notes:::-webkit-scrollbar {
+#notes {
+  width: calc(100% - 360px);
+  padding-left: 120px;
+  float: left;
+}
+
+#notes::-webkit-scrollbar {
   display: none;
 }
 
@@ -162,9 +103,10 @@ h2 {
   margin: 0;
   display: block;
   overflow: hidden;
-  text-overflow: hidden;
+  text-overflow: ellipsis;
   width: 200px;
-  word-spacing: normal;
+
+  white-space: normal;
   text-align: left;
   word-wrap: break-word;
   display: -webkit-box;
@@ -180,7 +122,90 @@ h2 {
   height: 2.4em;
 }
 
+#notes a > p:nth-of-type(2) {
+  font-size: 16px;
+  font-weight: 100;
+  color: #525252;
+  line-height: 1.5em;
+  height: 4.5em;
+  margin-bottom: 1em;
+}
+
 #notes a > span {
   display: inline-block;
   font-weight: 900;
+}
+
+/* Edit page */
+.go-home {
+  width: 100%;
+  text-align: center;
+  margin: 1em 0 4em;
+}
+
+.go-home a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: url(/notes/assets/icons/go-home.png) 50% 50% no-repeat;
+  background-color: #121212;
+}
+
+.edit-container {
+  margin: 0 auto;
+  width: calc(100% - 8em);
+  padding: 2em 4em;
+  box-shadow: 5px 15px 20px #d1d1d1;
+}
+
+.edit-container input {
+  display: block;
+  width: 100%;
+  background: none;
+  line-height: 5rem;
+  height: 5rem;
+  font-size: 2.5rem;
+  font-weight: 900;
+  border: none;
+  border-bottom: #121212;
+}
+
+.edit-container input::placeholder {
+  color: #b9b9b9;
+}
+
+.edit-container textarea {
+  display: block;
+  width: 100%;
+  border: none;
+  height: 400px;
+  font-size: 1.2em;
+  font-family: "Avenir";
+  font-weight: 100;
+  padding: 1em 0;
+  resize: none;
+  border: none;
+  border-top: 1px solid #b9b9b9;
+  overflow: auto;
+  outline: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.edit-container textarea::placeholder {
+  color: #707070;
+}
+
+#remove-note {
+  width: 240px;
+  height: 35px;
+  line-height: 35px;
+  color: #ffffff;
+  background-color: #121212;
+  border: none;
+  font-size: 16px;
+  font-family: "Avenir";
+  margin: 2em 0;
 }
