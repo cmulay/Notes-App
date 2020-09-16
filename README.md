@@ -1,12 +1,6 @@
 # Nota - The Note Taking App [Beta-1]
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/cmulay/Notes-App/master/notes/assets/images/notes_logo.png>
-</p>
-
-<p>
 Nota is a simple and clean note taking app which gives you materially designed minimal experience which helps you to stay focused.
-</p>
 
 ---
 ## Features
