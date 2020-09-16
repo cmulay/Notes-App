@@ -36,6 +36,9 @@ User navigation bar coming soon and much more..
 ![Image of Nota Home](https://raw.githubusercontent.com/cmulay/Notes-App/master/notes/assets/images/mob_note.png)
 
 ---
+## Third Party Libraries
+[UUID](https://www.npmjs.com/package/uuid): To give each note a unique Note ID.
 
+---
 ## License
 This project is licensed under [MIT](https://github.com/cmulay/Notes-App/blob/master/LICENSE) license.
