@@ -1,29 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Nota - The Note App</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta
       name="format-detection"
       content="telephone=no, address=no, email=no"
     />
-    <title>Minimal Notes</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"
+    />
 
     <link
-      rel="shortcut icon"
+      rel="icon"
       href="/notes/assets/icons/favicon.ico"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="/notes/styles/style.css" />
-    <link rel="stylesheet" href="/notes/styles/m-style.css" />
+    <link rel="stylesheet" href="/notes/styles/styles.css" />
+    <link rel="stylesheet" href="/notes/styles/m-styles.css" />
   </head>
   <body>
     <header class="header">
-      <h1>Minimal Notes</h1>
-      <h2>Elegant Note talking experience</h2>
+      <h1><img src="/notes/assets/images/notes_logo.png" alt="Nota Logo" /></h1>
     </header>
     <div class="go-home">
       <a href="/notes/index.html"></a>
@@ -31,20 +33,22 @@
     <div class="edit-container">
       <input
         type="text"
-        placeholder="Title"
         id="note-title"
         class="title-input"
+        placeholder="Title"
       />
       <textarea
-        placeholder="Start Typing..."
         id="note-body"
         class="body-input"
+        placeholder="Start taking your note..."
       ></textarea>
     </div>
-    <button id="remove-note">Delete Note</button>
+    <center>
+      <button id="remove-note">Delete Note</button>
+    </center>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment-with-locales.min.js"></script>
-    <script src="/notes/js/notes-function.js"></script>
+    <script src="/notes/js/notes-functions.js"></script>
     <script src="/notes/js/notes-edit.js"></script>
   </body>
 </html>
