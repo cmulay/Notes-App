@@ -40,7 +40,7 @@
     bottom: 2em;
     right: 2em;
     border: none;
-    background: url(/notes/assets/icons/create-note.png) 50% 50% no-repeat;
+    background: url(assets/icons/create-note.png) 50% 50% no-repeat;
     background-color: #121212;
     box-shadow: 2px 2px 5px 0px #f0efdc;
   }

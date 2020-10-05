@@ -51,7 +51,7 @@ const generateNoteDOM = (note) => {
   noteEl.appendChild(contentsEl);
 
   // Setup the link
-  noteEl.setAttribute("href", `/notes/edit.html#${note.id}`);
+  noteEl.setAttribute("href", `edit.html#${note.id}`);
   noteEl.classList.add("list-item");
 
   //Setup the date status
