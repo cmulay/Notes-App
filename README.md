@@ -24,16 +24,16 @@ Keeps all your notes at one place,  makes it available right when you need them.
 ## Screen Shots [Web]
 UI will be improved. 
 #### Home Screen:
-![Image of Nota Home](https://raw.githubusercontent.com/cmulay/Notes-App/master/notes/assets/images/web_home.png)
+![Image of Nota Home](https://github.com/cmulay/Notes-App/blob/master/assets/images/web_home.png)
 #### Note Window:
-![Image of Nota Home](https://raw.githubusercontent.com/cmulay/Notes-App/master/notes/assets/images/web_note.png)
+![Image of Nota Home](https://github.com/cmulay/Notes-App/blob/master/assets/images/web_note.png)
 
 ## Screen Shots [Mobile]
 User navigation bar coming soon and much more..
 #### Home Screen:
-![Image of Nota Home](https://raw.githubusercontent.com/cmulay/Notes-App/master/notes/assets/images/mob_home.png)
+![Image of Nota Home](https://github.com/cmulay/Notes-App/blob/master/assets/images/mob_home.png)
 #### Note Window:
-![Image of Nota Home](https://raw.githubusercontent.com/cmulay/Notes-App/master/notes/assets/images/mob_note.png)
+![Image of Nota Home](https://github.com/cmulay/Notes-App/blob/master/assets/images/mob_note.png)
 
 ## Third Party Libraries
 [UUID](https://www.npmjs.com/package/uuid): To give each note a unique Note ID.
